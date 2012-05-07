@@ -1,17 +1,39 @@
-<html>
+<?php
 
-<head>
-</head>
+$date = date('F d, Y, g:i:s a');
+echo $date;
 
-<body>
+if(isset($_COOKIE['testsite']))
+{
+	header('Location:enter.php');
+}
+else
+{
+	echo '
+	<html>
 
-<h1><center>Welcome to CRUD control center</center></h1>
+	<head>
+	</head>
 
-<p>
+	<body>
 
-<center><h3><?php include("links.php"); ?></h3></center>
+	<h1><center>Welcome to CRUD control center</center></h1>
 
+	<p>
+	<center>Please login...</center>
+	<center>
+	<form method="post" action="login.php">
 
-</body>
+	Name: <input type="text" name="name" maxlength="15" /><br />
+	Password: <input type="password" name="password" maxlength="15" /><br />
+	Remember Me? <input type="checkbox" name="remember" /><br />
 
-</html>
+	<input type="submit" name="submit" value="Login" /><br />
+	<p><a href="form.php">Register?</a>
+	</center>
+
+	</body>
+
+	</html>';
+}
+?>

@@ -33,5 +33,5 @@ mysql_close();
 <input type="hidden" name="id" value="<?php echo $_REQUEST['ids']; ?>" />
 </form>
 
-<?php include("links.php");?>
+<center><h3><?php include("links.php"); ?></h3></center>
 
