@@ -1,0 +1,14 @@
+break /home/stanley/Github/webdev_class/ruby/inheritance.rb:25
+break /home/stanley/Github/webdev_class/ruby/inheritance.rb:26
+break /home/stanley/Github/webdev_class/ruby/inheritance.rb:28
+break /home/stanley/Github/webdev_class/ruby/inheritance.rb:16
+break /home/stanley/Github/webdev_class/ruby/inheritance.rb:17
+set autoeval off
+set basename on
+set debuggertesting on
+set autolist off
+set autoirb off
+display @name
+display @artist
+display @duration
+display @lyrics

@@ -1,6 +1,6 @@
-the_count = [1, 2, 3, 4, 5]     # is there an intelligent way to make this array?
+the_count = [1, 2, 3, 4, 5]     # Alternative: the_count = [*1..5] with the * being the splat operator
 fruits = ["apples", "oranges", "pears", "apricots"]
-change = [1, "pennies", 2, "dimes", 3, "quarters"]    # is this a hash table?
+change = [1, "pennies", 2, "dimes", 3, "quarters"]   
 
 # this first kind of for-loop goes through an array
 # Question: the entire contents of the array?
@@ -25,7 +25,6 @@ elements = []
 for i in (0..5)
   puts "Adding #{i} to the list."
   # push is a function that arrays understand
-  # FIFO or FILO?
   elements.push(i)
 end
 

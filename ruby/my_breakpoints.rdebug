@@ -1,0 +1,12 @@
+break ex39.rb:11
+break ex39.rb:19
+break ex39.rb:20
+break ex39.rb:21
+break ex39.rb:22
+break ex39.rb:23
+set autoeval off
+set basename off
+set debuggertesting off
+set autolist off
+set autoirb off
+display stuff
