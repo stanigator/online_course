@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
+
+<catalog>
+    <album>
+        <title>Exodus</title>
+        <artist>Bob Marley</artist>
+        <country>Jamaica</country>
+        <price>19,99</price>
+    </album>
+    <album>
+        <title>Black Album</title>
+        <artist>Metallica</artist>
+        <country>USA</country>
+        <price>20,00</price>
+    </album>
+    <album>
+        <title>Nevermind</title>
+        <artist>Nirvana</artist>
+        <country>USA</country>
+        <price>22,00</price>
+    </album>
+</catalog>

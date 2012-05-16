@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8983298"?>
+
+<!DOCTYPE email SYSTEM "email.dtd">
+
+<email>
+    <to>Victor</to>
+    <from>Stanley</from>
+    <body>Hi how are you?</body>
+</email>

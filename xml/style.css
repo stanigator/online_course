@@ -1,0 +1,26 @@
+music{
+    background-color: #ffffff;
+    width: 100%;
+}
+
+album{
+    display: block;
+    margin-bottom: 30pt;
+    margin-left: 0;
+}
+
+name{
+    color: #ff0000;
+    font-size: 20pt;
+}
+
+artist{
+    color: #0000ff;
+    font-size: 20pt;
+}
+
+year, price{
+    display: block;
+    color: #000000;
+    margin-left: 20pt;
+}

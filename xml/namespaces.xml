@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<a:table xmlns:a="http://www.w3.org/TR/html4/">
+    <a:tr>
+        <a:td>John</a:td>
+        <a:td>Alex</a:td>
+    </a:tr>
+</a:table>
+
+<b:table xmlns:b="http://www.furniture.com/tables">
+    <bname>Coffee table</b:name>
+    <b:length>30</b:length>
+    <b:cost>39,00</b:cost>
+</b:table>
