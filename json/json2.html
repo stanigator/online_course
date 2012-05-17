@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+
+function go()
+{
+    $.get('testjson.php', function(data){
+            var m = eval('msg='+data);
+            document.write(m.date+"<br />"+m.text);
+        });
+}
+
+</script>
+</head>
+
+<body>
+
+    <input type="button" value="go" onclick="go()" />
+
+</body>
+</html>
