@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<bookstore>
+	<book category="cooking">
+		<title lang="en">Everyday Italian</title>
+		<author>Giada</author>
+		<year>2005</year>
+		<price>30.00</price>
+	</book>
+	<book category="cooking">
+		<title lang="en">Book 2</title>
+		<author>Giada</author>
+		<year>2005</year>
+		<price>30.00</price>
+	</book>
+	<book category="cooking">
+		<title lang="en">Book 3</title>
+		<author>Giada</author>
+		<year>2005</year>
+		<price>30.00</price>
+	</book>
+</bookstore>

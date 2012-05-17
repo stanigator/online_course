@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<albumstore xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<album>
+			<description
+				xlink:type="simple"
+				xlink:href="http://www.bobmarley.com"
+				xlink:show="new"
+		  >Welcome Got to Bob Marley's webpage</description>
+	    <title>Exodus</title>
+	    <artist>Bob Marley</artist>
+	    <country>Jamaica</country>
+	    <price>19,99</price>
+	</album>
+</albumstore>

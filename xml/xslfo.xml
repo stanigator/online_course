@@ -1,0 +1,11 @@
+<fo:root xmlns:fo="http://w3.org/1999/XSL/Format">
+	<fo:layout-master-set>
+		<fo:simple-page-master master-name="MyPage">
+			<!-- Page template goes here -->
+		</fo:simple-page-master>
+	</fo:layout-master-set>
+	
+	<fo:page-sequence master-reference="MyPage">
+		<!-- Page content goes here -->
+	</fo:page-sequence>
+</fo:root>
