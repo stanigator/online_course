@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript">
+function test()
+{
+    var xmlhttp;
+    if(window.XMLHttpRequest)
+    {
+        xmlhttp = new XMLHttpRequest();
+    }
+    else
+    {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState==4)      // Check if Browswer is ready to receive the answer
+        {
+            document.getElementById('result').innerHTML = xmlhttp.responseText;
+        }
+    }
+
+    xmlhttp.open("GET","text.txt",true);        // we want synchronous request from the text file
+    xmlhttp.send();
+}
+</script>
+</head>
+
+<body>
+    <input type="button" value="Reveal" onclick="test()" />
+    <br />
+    <div id="result">Result</div>
+</body>
+
+</html>
