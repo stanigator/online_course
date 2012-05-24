@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+      $('#button').click(function(){
+         alert('Hello!');
+         $('#div1').hide(1000);
+      });
+   }); 
+</script>
+</head>
+<body>
+    <div id="div1">Testing</div>
+    <input type="button" id="button" value="hide it" />
+</body>
+</html>
