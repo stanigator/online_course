@@ -1,0 +1,32 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("form").click(function(){
+        var send = $(this).serialize();
+        $.ajax({
+            type: "POST",
+            url: "ajax.php",
+            data: send,
+            dataType: "json",
+            success: function(msg){
+                    $("#result").html(data.name).prepend(data.password);
+                }
+            });
+        return false;
+    });
+});
+
+
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="username" name="username" /><br />
+<input type="password" id="pw" name="pw" /><p>
+<input type="button" id="button" value="Submit" />
+</form>
+<p><div id="result"></div>
+</body>
+</html>

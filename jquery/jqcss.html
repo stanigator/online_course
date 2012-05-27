@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#click").click(function(){
+        var data = "Hello! <br />";
+        $("#i").after(data);
+    });
+});
+
+
+</script>
+</head>
+<body>
+    <p>This is my first p</p>
+    <div id="i"></div>
+    <p>This is my second p</p>
+    <p>This is my third p</p>
+    <input type="button" id="click" value="click" />
+</body>
+</html>

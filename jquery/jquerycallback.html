@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide(1000, function(){
+            alert("You hide it");
+        });
+    });
+});
+
+
+</script>
+</head>
+<body>
+    <button>Click</button>
+    <p>Hello!</p>
+</body>
+</html>

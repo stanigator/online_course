@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<link type="text/css" href="jqueryui/css/smoothness/jquery-ui-1.8.20.custom.css" rel="Stylesheet" />	
+<script type="text/javascript" src="jqueryui/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jqueryui/js/jquery-ui-1.8.20.custom.min.js"></script>
+<style>
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: #048204;
+    border: 1px solid black;
+}
+
+#parentbox{
+    width: 500px;
+    height: 500px;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+}
+</style>
+<script>
+	$(document).ready(function(){
+        $("#box").resizable({containment:"parent", animate: true, ghost: true, animationDuration: "fast"});
+	});
+</script>
+</head>
+
+<body>
+<div id="parentbox">
+<div id="box"></div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>img{height:100px; float: left;}</style>
+    <script>
+        $(document).ready(function(){
+            $("#button").click(function(){
+                $("#images").empty();
+                $("#images").append("<img class='img' src='ajax-loader1.gif' />");
+                $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+                {
+                    tags: "dog",
+                    tagmode: "any",
+                    format: "json"
+                }, function(data){
+                    $.each(data.items), function(i,item){
+                        $(".img").remove();
+                        $('<img/>').attr("src", item.media.m).appendTo("#images");
+                        if(i==3) return false;
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" id="button" value="get pics" /><p>
+    <div id="images"></div>
+</body>
+</html>

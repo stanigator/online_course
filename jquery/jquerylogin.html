@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#send").click(function(){
+        var vname = $("#name").val();
+        var vpw = $("#pw").val();
+        $.post("loginjquery.php", {phpname:vname, phppw:vpw}, function(data){
+            $("#result").fadeIn("slow").html(data);
+        });
+    });
+});
+
+
+</script>
+</head>
+<body>
+Name:<input type="text" id="name" /><br />
+Password:<input type="password" id="pw" /><br />
+<p>
+<input type="button" id="send" value="submit" />
+<p>
+<div id="result" style="display:none;"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<link type="text/css" href="jqueryui/css/smoothness/jquery-ui-1.8.20.custom.css" rel="Stylesheet" />	
+<script type="text/javascript" src="jqueryui/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jqueryui/js/jquery-ui-1.8.20.custom.min.js"></script>
+<style>
+	#dropbox{
+		height: 200px;
+		width: 200px;
+		background-color: yellow;
+	}
+
+    .border{
+        border: 1px solid black;
+    }
+</style>
+<script>
+	$(document).ready(function(){
+        $("#name, #city").draggable({containment: "document", revert: true, start:function(){
+            $(this).text();
+        }});
+	    $("#dropbox").droppable({hoverClass:"border", tolerance: "touch", accept:"#name", drop: function(){
+            $("#dropbox").append(contents + "<br />");
+        }});	
+        
+		
+	});
+</script>
+</head>
+
+<body>
+<span id="name">Victor</span>
+<span id="name">Tom</span>
+<span id="city">London</span>
+<div id="dropbox"></div>
+</body>
+
+</html>
