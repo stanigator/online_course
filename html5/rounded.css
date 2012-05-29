@@ -1,0 +1,13 @@
+#main{
+    border: 1px solid black;
+    width: 300px;
+    background: -webkit-radial-gradient(center, circle, red 20%, orange 50%);
+    text-align: center;
+    -webkit-border-radius: 20px;
+    -webkit-box-shadow: rgb(110,110,110,0.3) 5px 5px 8px inset;
+}
+
+#text{
+    font: bold 30px Times new roman;
+    text-shadow: rgb(110,110,110) 2px 2px 2px;
+}

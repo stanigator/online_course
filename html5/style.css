@@ -1,0 +1,45 @@
+#wrapper{
+    border: 1px solid black;
+    width: 700px;
+    height: 700px;
+    margin: 0px auto;
+}
+
+section{
+    border: 1px solid black;
+    width: 500px;
+    margin: 0px auto;
+}
+
+#first{
+    border: 1px solid #000;
+    height: 90px;
+}
+
+nav{
+    border: 1px solid black;
+    margin: 0px auto;
+    width: 350px;
+}
+
+nav li{
+    display: inline;
+    padding: 20px;
+}
+
+aside{
+    border: 1px solid black;
+    width: 95px;
+    height: 400px;
+    margin-top: -340px;
+}
+
+#second{
+    border: 1px solid black;
+    height: 40px;
+}
+
+article{
+    border: 1px solid black;
+    width: 390px;
+}

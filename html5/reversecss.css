@@ -1,0 +1,36 @@
+#parent{
+    border: 1px solid black;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+
+#child1{
+    border: 1px solid green;
+    background: yellow;
+    padding: 20px;
+    margin: 10px;
+}
+
+#child2{
+    border: 1px solid green;
+    background: yellow;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+#child3{
+    border: 1px solid green;
+    background: yellow;
+    padding: 20px;
+    margin: 10px;
+    -webkit-box-flex: 1;
+}
+
+#child4{
+    border: 1px solid green;
+    background: yellow;
+    padding: 20px;
+    margin: 10px;
+}
+
